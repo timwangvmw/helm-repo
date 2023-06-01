@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   tap:
   - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2023-06-01T22:11:28.465644+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 32c1824f7f600b13dcc57f6c4d61f5cf32f207077678ed34bcee534179b2cb28
+    name: tap
+    type: application
+    urls:
+    - https://timwangvmw.github.io/helm-repo/tap-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-06-01T16:39:21.870793+08:00"
+    created: "2023-06-01T22:11:28.463449+08:00"
     description: A Helm chart for Kubernetes
     digest: 0191f8539145d49fb0cf8ccd9d549b667c051ad8b91a83324c47d9d68a44e18f
     name: tap
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-06-01T16:39:21.870102+08:00"
+    created: "2023-06-01T22:11:28.457499+08:00"
     description: A Helm chart for Kubernetes
     digest: 9a436a3f2c31b388d853f82e54def1d240ab122ccb22be8896300bdfabf3bea3
     name: tap
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://timwangvmw.github.io/helm-repo/tap-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-01T16:39:21.868997+08:00"
+generated: "2023-06-01T22:11:28.454519+08:00"

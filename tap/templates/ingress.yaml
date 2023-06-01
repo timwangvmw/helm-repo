@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Ingress
+metadata:
+  name: {{ .Values.workloadname }}
+  labels:
+    app.kubernetes.io/part-of: {{ .Values.workloadname }}
+    apps.tanzu.vmware.com/act-tests: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: server
+    app.kubernetes.io/component: run
+    carto.run/workload-name: {{ .Values.workloadname }}
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Values.workloadname }}
+            port:
+              number: 8080
