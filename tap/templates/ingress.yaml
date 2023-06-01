@@ -11,7 +11,8 @@ metadata:
     carto.run/workload-name: {{ .Values.workloadname }}
 spec:
   rules:
-  - http:
+  - host: {{ .Values.workloadname }}.tim-tap-140.pso.lab
+    http:
       paths:
       - path: /
         pathType: Prefix
