@@ -22,3 +22,8 @@ helm repo update timwang_github
 ```
 helm search repo timwang_github
 ```
+
+## 5. Test
+```
+helm install test-tim tap -n tap-sit --dry-run -f tap/values.yaml
+```
